@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <!-- Load TensorFlow.js and COCO-SSD -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <script src="filedrop.umd.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+ </head>
+  <body>
+    <h1>Dude, Where's My Llama?</h1>
+    <button id="reset" disabled="disabled">Reset</button>
+    <file-drop id="dropTarget" accept="image/*"></file-drop>
+    <img id="image" style="display: none" crossorigin="Anonymous"/>
+    <canvas id="canvas" width="600" height="399"/>    
+    <script src="script.js"></script>
+  </body>
+</html>
